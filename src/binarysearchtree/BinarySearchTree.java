@@ -15,7 +15,8 @@ public class BinarySearchTree {
         }
     }
 
-    //Time O(log(n)) - Space O(1)
+    //Worst Time O(n) - Space O(1)
+    //Best Time O(log(n)) - Space O(1)
     public boolean insert(int value){
         Node newNode = new Node(value);
         if (root == null){
@@ -43,6 +44,8 @@ public class BinarySearchTree {
         }
     }
 
+    //Worst Time O(n) - Space O(1)
+    //Best Time O(log(n)) - Space O(1)
     public boolean contains(int value){
         Node temp = root;
         while(temp != null) {
