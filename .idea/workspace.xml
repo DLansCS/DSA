@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42fa5ff7-23f4-4670-b116-90780ec27e00" name="Changes" comment="" />
+    <list default="true" id="42fa5ff7-23f4-4670-b116-90780ec27e00" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/DSA/src/stack/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/src/stack/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/src/stack/stackarraylist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/src/stack/stackarraylist/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/src/stack/stackarraylist/StackArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/src/stack/stackarraylist/StackArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DSA/src/tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/DSA/src/tree/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +48,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dalton Laptop\Desktop\Projects\CodingProjects\PersonalProject\DataStructures\src\stack" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dalton Laptop\Desktop\Projects\CodingProjects\PersonalProject\DataStructures\src\binarysearchtree" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="stack.stackarraylist" />
