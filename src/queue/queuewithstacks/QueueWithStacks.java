@@ -10,6 +10,7 @@ import java.util.Stack;
             stack2 = new Stack<>();
         }
 
+        // Time: O(n) -  Space O(n)
         public void enqueue(int value) {
             while (!stack1.isEmpty()) {
                 stack2.push(stack1.pop());
@@ -20,6 +21,7 @@ import java.util.Stack;
             }
         }
 
+        // Time: O(1) -  Space O(1)
         public Integer dequeue(){
             if(stack1.isEmpty()){
                 return null;
@@ -28,10 +30,12 @@ import java.util.Stack;
             return stack1.pop();
         }
 
+        // Time: O(1) -  Space O(1)
         public int peek() {
             return stack1.peek();
         }
 
+        // Time: O(1) -  Space O(1)
         public boolean isEmpty() {
             return stack1.isEmpty();
         }

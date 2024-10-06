@@ -1,4 +1,4 @@
-package queue;
+package queue.queuewithlinkedlist;
 
 /*
 QUEUE TIP
@@ -14,8 +14,6 @@ the entire list to find the last node, which results in O(n) time for enqueue op
 Thus, the typical approach for a queue using a linked list is to enqueue at the tail and dequeue from the head.
 
  */
-
-import stack.Stack;
 
 public class Queue {
     private Node first;
@@ -38,6 +36,7 @@ public class Queue {
         length = 1;
     }
 
+    // Time: O(n) -  Space O(1)
     public void printQueue(){
         Node temp = first;
         while(temp != null){
@@ -46,18 +45,22 @@ public class Queue {
         }
     }
 
+    // Time: O(1) -  Space O(1)
     public void getLength(){
         System.out.println("Length: " + length);
     }
 
+    // Time: O(1) -  Space O(1)
     public void getFirst(){
         System.out.println("first: " + first.value);
     }
 
+    // Time: O(1) -  Space O(1)
     public void getLast(){
         System.out.println("last: " + last.value);
     }
 
+    // Time: O(1) -  Space O(1)
     public void enqueue(int value){
         Node newNode = new Node(value);
         if(length == 0){
@@ -70,6 +73,7 @@ public class Queue {
         length++;
     }
 
+    // Time: O(1) -  Space O(1)
     public Node dequeue(){
         if(length == 0){
             return null;

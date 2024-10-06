@@ -1,6 +1,4 @@
-package stack.stackarraylist;
-
-import stack.Stack;
+package stack.stackwitharraylist;
 
 public class Main {
     public static void main(String[] args) throws Exception {

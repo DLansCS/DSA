@@ -1,6 +1,4 @@
-package stack;
-
-import stack.stackarraylist.StackArrayList;
+package stack.stackwithlinkedlist;
 
 public class Main {
     public static void main(String[] args) throws Exception {

@@ -1,7 +1,5 @@
 package queue.queuewithstacks;
 
-import queue.Queue;
-
 public class Main {
     public static void main(String[] args) throws Exception {
         QueueWithStacks myQueue = new QueueWithStacks();

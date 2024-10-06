@@ -1,4 +1,4 @@
-package stack.stackarraylist;
+package stack.stackwitharraylist;
 
 import java.util.ArrayList;
 
@@ -6,20 +6,24 @@ public class StackArrayList<T> {
 
     private final ArrayList<T> stackList = new ArrayList<>();
 
+    // Time: O(1) -  Space O(1)
     public ArrayList<T> getStackList() {
         return stackList;
     }
 
+    // Time: O(n) -  Space O(1)
     public void printStack() {
         for (int i = stackList.size()-1; i >= 0; i--) {
             System.out.println(stackList.get(i));
         }
     }
 
+    // Time: O(1) -  Space O(1)
     public boolean isEmpty() {
         return stackList.size() == 0;
     }
 
+    // Time: O(1) -  Space O(1)
     public T peek() {
         if (isEmpty()) {
             return null;
@@ -28,41 +32,39 @@ public class StackArrayList<T> {
         }
     }
 
+    // Time: O(1) -  Space O(1)
     public int size() {
         return stackList.size();
     }
 
+    // Time: O(1) amortised -  Space O(1)
     public void push(T value) {
         stackList.add(value);
     }
 
+    // Time: O(1) amortised -  Space O(1)
     public T pop() {
         if (isEmpty()) return null;
         return stackList.remove(stackList.size() - 1);
     }
 
+    // Time: O(n) -  Space O(n)
     public String reverseString(String string) {
-        // Create a new stack of characters.
         StackArrayList<Character> stack = new StackArrayList<>();
-        // Create an empty string for the reversed characters.
         String reversedString = "";
 
-        // Loop through each character in the original string and push it onto the stack.
         for (char c : string.toCharArray()) {
             stack.push(c);
         }
 
-        // Pop each character off the stack and add it to the reversed string.
-        // This will reverse the order of the characters in the original string.
         while (!stack.isEmpty()) {
             reversedString += stack.pop();
         }
-
-        // Return the reversed string.
         return reversedString;
     }
 
 
+    // Time: O(n) -  Space O(n)
     public boolean isBalancedParentheses(String parentheses) {
         StackArrayList<Character> stack = new StackArrayList<>();
         for (char p : parentheses.toCharArray()) {
@@ -77,6 +79,7 @@ public class StackArrayList<T> {
         return stack.isEmpty();
     }
 
+    // Time: O(n^2) -  Space O(n)
     public  void sortStack(StackArrayList<Integer> stack) {
         StackArrayList<Integer> additionalStack = new StackArrayList<>();
 

@@ -1,4 +1,4 @@
-package stack;
+package stack.stackwithlinkedlist;
 /*
 STACK NOTES
 Pushing to the top (head) allows for efficient O(1) time complexity for both push and pop operations,
@@ -27,6 +27,7 @@ public class Stack {
         height=1;
     }
 
+    // Time: O(n) -  Space O(1)
     public void printStack(){
         Node current = top;
         while(current != null){
@@ -35,14 +36,17 @@ public class Stack {
         }
     }
 
+    // Time: O(1) -  Space O(1)
     public void getTop(){
         System.out.println("Top: " + top.value);
     }
 
+    // Time: O(1) -  Space O(1)
     public void getHeight(){
         System.out.println("Height: " + height);
     }
 
+    // Time: O(1) -  Space O(1)
     public void push(int value){
         Node newNode = new Node(value);
         if(height == 0){
@@ -54,6 +58,7 @@ public class Stack {
         height++;
     }
 
+    // Time: O(1) -  Space O(1)
     public Node pop(){
         if(height == 0){
             return null;
